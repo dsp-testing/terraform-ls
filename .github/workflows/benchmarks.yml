@@ -67,7 +67,7 @@ jobs:
       -
         name: Upload benchmark data as artifact
         if: ${{ always() && !cancelled() }}
-        uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # https://github.com/actions/upload-artifact/releases/tag/v3.1.2
+        uses: actions/upload-artifact@50769540e7f4bd5e21e526ee35c689e35e0d6874 # https://github.com/actions/upload-artifact/releases/tag/v4.4.0
         with:
           name: benchdata-${{ github.ref_name }}-${{ github.sha }}-${{ github.run_id }}.json
           path: "${{ runner.temp }}/benchdata.json"
