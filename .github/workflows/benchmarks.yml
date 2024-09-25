@@ -74,7 +74,7 @@ jobs:
       -
         name: Send failures to Slack
         if: ${{ failure() && !cancelled() }}
-        uses: slackapi/slack-github-action@007b2c3c751a190b6f0f040e47ed024deaa72844 # https://github.com/slackapi/slack-github-action/releases/tag/v1.23.0
+        uses: slackapi/slack-github-action@37ebaef184d7626c5f204ab8d3baff4262dd30f0 # https://github.com/slackapi/slack-github-action/releases/tag/v1.27.0
         with:
           payload: |
             {
